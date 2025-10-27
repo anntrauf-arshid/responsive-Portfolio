@@ -1,14 +1,13 @@
-
-body{
+*{
     padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  
 }
-.login-section {
-  background: linear-gradient(135deg, #54647c, #070520);
-  height: 100vh;
-}
+
 .login-card {
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%;
   max-width: 400px;
   background-color: #fff;
@@ -25,7 +24,7 @@ body{
 
 @media (max-width: 576px) {
   .login-card {
-    padding: 2rem 1.5rem;
+    width: 80%;
   }
   .btn {
     font-size: 0.9rem;

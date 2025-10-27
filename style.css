@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:  sans-serif;
+}  .navbar {
+  background-color: #fff;
+
+  }
+  .navbar-brand {
+    letter-spacing: 1px;
+     color: #0f0c29 !important;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .nav-link {
+    margin-right: 6px;
+    position: relative;
+    color: #0f0c29 !important;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg,  #8e26f0 ,#120635);
+    transition: width 0.4s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .nav-link:hover {
+    color: blue !important;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    filter: invert(1);
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .carousel-caption{
+    size: 40px;
+  }
+
+.card:hover{
+    box-shadow: -14px -22px 56px -47px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+.skills-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.skills {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  animation: scroll 25s linear infinite;
+}
+
+.skills .card {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  min-width: 100px;
+}
+
+.skills .card:hover {
+  transform: scale(1.1);
+  color: white !important;
+  background-color: #120635;
+  
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  } 
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.footer{
+    margin-top: 30px;
+    background-color: #24243e;
+    color: white;
+}
+.icon i {           
+  transition: color 0.3s ease; 
+}
+
+.icon .github:hover {
+  color:  #333;              
+}
+.icon .linkedin:hover {
+  color: #0077B5;              
+}
+.icon .twitter:hover {
+  color: #1da1f2;              
+}
+.icon .insta:hover {
+  color: #e4405f;              
+}
+  .btns{
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+    /* Styles for screens smaller than 600px (e.g., mobile phones) */
+@media only screen and (max-width: 600px) {
+  body  .main h1{
+        font-size: 1rem;
+        margin-top: 30px;
+        margin-left: 0px;
+        color: white;
+    }
+    .main p{
+        font-size: 1rem;
+        margin-left: 0px;
+
+    }
+    .fname{
+      margin-top: 30px !important;
+    }
+    .btns{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100% !important;
+
+    }
+   
+  .skills .card {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* Styles for screens between 601px and 1024px (e.g., tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body 
+   .main h1{
+        font-size: 1.5rem;
+        margin-top: 30px;
+        margin-left: 0px;
+        color: white;
+    }
+    .main p{
+        font-size: 1.5rem;
+        margin-left: 0px;
+
+    }
+    .fname{
+      margin-top: 30px !important;
+    }
+    .btns{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100% !important;
+
+    }
+   
+  .skills .card {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 20px;
+  }
+}
+

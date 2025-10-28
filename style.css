@@ -157,35 +157,69 @@ font-family:  sans-serif;
   }
 }
 
-/* Styles for screens between 601px and 1024px (e.g., tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  body 
-   .main h1{
-        font-size: 1.5rem;
-        margin-top: 30px;
-        margin-left: 0px;
-        color: white;
-    }
-    .main p{
-        font-size: 1.5rem;
-        margin-left: 0px;
+/*  For tablets (601px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) 
+{
 
-    }
-    .fname{
-      margin-top: 30px !important;
-    }
-    .btns{
-      display: flex;
-      flex-wrap: wrap;
-      width: 100% !important;
+  .main h1 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-left: 0;
+    color: white;
+  }
 
-    }
-   
+  .main p {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+
+  .fname {
+    margin-top: 30px !important;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .skills .card {
     display: flex;
     align-items: center;
-    padding: 8px;
-    font-size: 20px;
+    padding: 12px;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+
+  .navbar-nav .nav-item {
+    margin: 6px 4px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .btns .btn {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 6px;
   }
 }
-
